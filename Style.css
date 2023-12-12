@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "aside main"
+    "aside main"
+    "aside main"
+    "aside main";
+
+
+    background-color: white;
+}
+
+.aside-container{
+    display: grid;
+    grid-area: aside;
+    grid-area: 1/1/6/1;
+    row-gap: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.aside-presentacion{
+    text-align: center;
+    padding: 5px;
+}
+
+.aside-presentacion div{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.aside-container img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+}
+
+aside{
+    background-color: rgb(249, 207, 81);
+    color: rgb(59, 5, 5);
+}
+
+.main-container{
+    margin-left: 10px;
+    display: grid;
+    grid-area: main;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.main-educacion{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "año-1 main-1"
+    "año-2 main-2"
+    "año-3 main-3";
+}
+
+.main-educacion h2{
+    grid-area: header;
+}
+
+.item-educacion{
+    grid-area: main-1;
+}
+
+#item-educacion-año-1{
+    grid-area: año-1;
+    padding-left: 10px;
+}
+#item-educacion-año-2{
+    grid-area: año-2;
+    padding-left: 10px;
+}
+
+#item-educacion-año-3{
+    grid-area: año-3;
+    padding-left: 10px;
+}
+
+.main-relativos div{
+    padding: 5px;
+    padding-left: 10px
+}
+
+.main-experiencia-laboral{
+    background-color: ;
+}
+
+h2, h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
